@@ -1,0 +1,53 @@
+{
+  "brand": "Hanzo",
+  "domain": "hanzo.vote",
+  "networks": {
+    "mainnet": {
+      "chainId": 36963,
+      "rpcUrl": "https://api.hanzo.network/ext/bc/C/rpc",
+      "safeSingleton": null,
+      "safeFactory": null,
+      "fallbackHandler": null,
+      "votesErc20Master": null,
+      "moduleGovernor": null,
+      "moduleFractal": null,
+      "strategy": null,
+      "votingWeight": null,
+      "voteTracker": null,
+      "proposerAdapter": null,
+      "systemDeployer": null,
+      "bounty": null,
+      "escrow": null,
+      "reputation": null
+    },
+    "testnet": {
+      "chainId": 36962,
+      "rpcUrl": "https://api.hanzo-test.network/ext/bc/C/rpc",
+      "safeSingleton": null,
+      "safeFactory": null,
+      "fallbackHandler": null,
+      "votesErc20Master": null,
+      "moduleGovernor": null,
+      "moduleFractal": null,
+      "strategy": null,
+      "votingWeight": null,
+      "voteTracker": null,
+      "proposerAdapter": null,
+      "systemDeployer": null,
+      "bounty": null,
+      "escrow": null,
+      "reputation": null
+    }
+  },
+  "voting": {
+    "votingPeriodBlocks": 17280,
+    "votingDelayBlocks": 7200,
+    "quorumPercent": 4,
+    "executionDelaySeconds": 172800
+  },
+  "branding": {
+    "logo": "/assets/hanzo-logo.svg",
+    "primaryColor": "#0a0a0a",
+    "favicon": "/assets/favicon.ico"
+  }
+}

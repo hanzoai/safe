@@ -1,0 +1,28 @@
+[profile.default]
+src = "contracts"
+test = "test"
+out = "out"
+libs = ["../../lux/standard/lib", "../../lux/standard/contracts"]
+allow_paths = ["../../lux/standard"]
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+solc_version = "0.8.31"
+auto_detect_solc = true
+evm_version = "cancun"
+
+# Single source of truth: Hanzo Safe + DAO contracts come from luxfi/standard.
+# No local contract code. Bump @luxfi/standard in package.json to upgrade.
+remappings = [
+    "@luxfi/standard/=../../lux/standard/contracts/",
+    "@luxfi/contracts/=../../lux/standard/contracts/",
+    "@safe-global/safe-smart-account/=../../lux/standard/lib/safe-smart-account/contracts/",
+    "@gnosis.pm/safe-contracts/=../../lux/standard/lib/safe-smart-account/contracts/",
+    "safe-smart-account/=../../lux/standard/lib/safe-smart-account/contracts/",
+    "@openzeppelin/contracts/=../../lux/standard/lib/openzeppelin-contracts/contracts/",
+    "@openzeppelin/contracts-upgradeable/=../../lux/standard/lib/openzeppelin-contracts-upgradeable/contracts/",
+    "@hanzoai/safe/=./",
+    "forge-std/=../../lux/standard/lib/forge-std/src/",
+]
+
+ignored_warnings_from = ["../../lux/standard/lib/**"]
