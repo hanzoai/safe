@@ -4,7 +4,7 @@
   "networks": {
     "mainnet": {
       "chainId": 36963,
-      "rpcUrl": "https://api.hanzo.network/ext/bc/C/rpc",
+      "rpcUrl": "https://api.hanzo.network/v1/bc/C/rpc",
       "safeSingleton": null,
       "safeFactory": null,
       "fallbackHandler": null,
@@ -22,7 +22,7 @@
     },
     "testnet": {
       "chainId": 36962,
-      "rpcUrl": "https://api.hanzo-test.network/ext/bc/C/rpc",
+      "rpcUrl": "https://api.hanzo-test.network/v1/bc/C/rpc",
       "safeSingleton": null,
       "safeFactory": null,
       "fallbackHandler": null,
