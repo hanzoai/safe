@@ -1,6 +1,7 @@
 {
   "name": "@hanzoai/safe",
   "version": "1.0.0",
+  "private": true,
   "description": "Hanzo white-label wrapper around the Lux Safe + Quasar signer + DAO stack. Re-exports @luxfi/standard contracts with Hanzo branding configuration (LP-040).",
   "license": "GPL-3.0-only",
   "repository": {
